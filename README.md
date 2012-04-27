@@ -6,11 +6,22 @@ holds submodules for git plugins I use.
 
 # Usage
 
-First install janus and then pull this repo. Create symbolic links for
-all files and folders in this dir to the root user dir.
+1. Install Vim and [janus](https://github.com/carlhuda/janus)
 
-```
-ln -s .vimrc.after ~/.vimrc.after
-ln -s .vimrc.before ~/.vimrc.before
-ln -s .janus ~/.janus
-```
+2. Clone this repo and init submodules:
+
+  ```
+  git clone https://AbleCoder@github.com/AbleCoder/vim-janus-custom.git;
+  git submodule init;
+  git submodule update;
+  ```
+
+3. Create symbolic links
+
+  ```
+  ln -s gvimrc.after ~/.gvimrc.after;
+  ln -s gvimrc.before ~/.gvimrc.before;
+  ln -s vimrc.after ~/.vimrc.after;
+  ln -s vimrc.before ~/.vimrc.before;
+  ln -s janus ~/.janus;
+  ```
