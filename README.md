@@ -8,9 +8,9 @@ holds submodules for git plugins I use.
 
 1. Install Vim and [janus](https://github.com/carlhuda/janus)
   
-  * Install this font for proper powerline symbols: [VeraMono-Powerline.ttf](https://github.com/gbuntu127/gfonts/blob/master/VeraMono-Powerline.ttf)
+1. Install this font for proper powerline symbols: [VeraMono-Powerline.ttf](https://github.com/gbuntu127/gfonts/blob/master/VeraMono-Powerline.ttf)
 
-2. Clone this repo and init submodules:
+1. Clone this repo and init submodules:
 
   ```
   git clone https://AbleCoder@github.com/AbleCoder/vim-janus-custom.git
@@ -19,7 +19,7 @@ holds submodules for git plugins I use.
   git submodule update
   ```
 
-3. Create symbolic links
+1. Create symbolic links
 
   ```
   ln -s `pwd`/gvimrc.after ~/.gvimrc.after
@@ -29,4 +29,4 @@ holds submodules for git plugins I use.
   ln -s `pwd`/janus ~/.janus
   ```
 
-4. Profit!!!
+1. Profit!!!
