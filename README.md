@@ -4,7 +4,7 @@ vim-janus-custom
 This holds my custom janus .vimrc.* files as well as a janus dir that
 holds submodules for git plugins I use.
 
-# Usage
+## Usage
 
 1. Install Vim and [janus](https://github.com/carlhuda/janus)
   
