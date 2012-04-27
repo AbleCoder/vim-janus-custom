@@ -7,6 +7,8 @@ holds submodules for git plugins I use.
 # Usage
 
 1. Install Vim and [janus](https://github.com/carlhuda/janus)
+  
+  * Install this font for proper powerline symbols: [VeraMono-Powerline.ttf](https://github.com/gbuntu127/gfonts/blob/master/VeraMono-Powerline.ttf)
 
 2. Clone this repo and init submodules:
 
@@ -26,3 +28,5 @@ holds submodules for git plugins I use.
   ln -s `pwd`/vimrc.before ~/.vimrc.before
   ln -s `pwd`/janus ~/.janus
   ```
+
+4. Profit!!!

@@ -1,0 +1,5 @@
+" set powerline font
+set guifont=Bitstream\ Vera\ Sans\ Mono\ for\ Powerline:h10
+
+" fancy up that powerline boooy!
+let g:Powerline_symbols = 'fancy'
