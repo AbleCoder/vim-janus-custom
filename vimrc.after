@@ -1,2 +1,51 @@
-" set that sweet sweet color scheme 
+" set that sweet sweet color scheme
 colorscheme ir_black
+
+" ZoomWin configuration
+map <Leader><Leader> :ZoomWin<CR>
+
+" Whitespace stuff
+set nowrap
+set tabstop=4
+set shiftwidth=4
+set softtabstop=4
+set expandtab
+
+" Highlight trailing spaces
+set list listchars=tab:\ \ ,trail:·
+
+" Trailing space removal on save
+function! StripTrailingSpaces()
+    let l = line(".")
+    let c = col(".")
+    silent! execute '%s/\s\+$//e'
+    call cursor(l, c)
+endfunction
+au BufWritePre * :call StripTrailingSpaces()
+
+" Retain visual block after indenting with < or >
+vmap > >gv
+vmap < <gv
+
+" setup viewport swapping
+function! MarkWindowSwap()
+    let g:markedWinNum = winnr()
+endfunction
+
+function! DoWindowSwap()
+    "Mark destination
+    let curNum = winnr()
+    let curBuf = bufnr( "%" )
+    exe g:markedWinNum . "wincmd w"
+    "Switch to source and shuffle dest->source
+    let markedBuf = bufnr( "%" )
+    "Hide and open so that we aren't prompted and keep history
+    exe 'hide buf' curBuf
+    "Switch to dest and shuffle source->dest
+    exe curNum . "wincmd w"
+    "Hide and open so that we aren't prompted and keep history
+    exe 'hide buf' markedBuf
+endfunction
+
+nmap <silent> <leader>mw :call MarkWindowSwap()<CR>
+nmap <silent> <leader>pw :call DoWindowSwap()<CR>
