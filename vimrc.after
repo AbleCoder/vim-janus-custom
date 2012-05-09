@@ -11,9 +11,9 @@ map <Leader><Leader> :ZoomWin<CR>
 
 " Whitespace stuff
 set nowrap
-set tabstop=4
-set shiftwidth=4
-set softtabstop=4
+set tabstop=2
+set shiftwidth=2
+set softtabstop=2
 set expandtab
 
 " Highlight trailing spaces
@@ -56,6 +56,5 @@ nmap <silent> <leader>mw :call MarkWindowSwap()<CR>
 nmap <silent> <leader>pw :call DoWindowSwap()<CR>
 
 " custom file type settings
-autocmd FileType html, htmldjango, less
-    \ setlocal shiftwidth=2 |
-    \ setlocal tabstop=2
+"au FileType html, htmldjango, less
+"    \ set shiftwidth=2 softtabstop=2 tabstop=2 textwidth=239
