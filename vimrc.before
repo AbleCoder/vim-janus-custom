@@ -3,3 +3,6 @@ set guifont=Bitstream\ Vera\ Sans\ Mono\ for\ Powerline:h11
 
 " fancy up that powerline boooy!
 let g:Powerline_symbols = 'fancy'
+
+" Don't beep
+set visualbell

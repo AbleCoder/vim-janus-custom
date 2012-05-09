@@ -4,3 +4,6 @@
 [submodule "janus/vim-less"]
 	path = janus/vim-less
 	url = https://github.com/groenewege/vim-less.git
+[submodule "janus/vim-flake8"]
+	path = janus/vim-flake8
+	url = https://github.com/nvie/vim-flake8.git
