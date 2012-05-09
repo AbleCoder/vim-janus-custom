@@ -54,3 +54,8 @@ endfunction
 
 nmap <silent> <leader>mw :call MarkWindowSwap()<CR>
 nmap <silent> <leader>pw :call DoWindowSwap()<CR>
+
+" custom file type settings
+autocmd FileType html, htmldjango, less
+    \ setlocal shiftwidth=2 |
+    \ setlocal tabstop=2

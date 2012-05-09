@@ -6,3 +6,7 @@ let g:Powerline_symbols = 'fancy'
 
 " Don't beep
 set visualbell
+
+" NERDTree configuration
+let NERDTreeIgnore=['\.pyc$', '\.rbc$', '\~$']
+map <Leader>n :NERDTreeToggle<CR>
