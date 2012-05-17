@@ -55,6 +55,12 @@ endfunction
 nmap <silent> <leader>mw :call MarkWindowSwap()<CR>
 nmap <silent> <leader>pw :call DoWindowSwap()<CR>
 
+" split-it mapping
+nmap <leader>-  :new<CR>
+nmap <leader>[  :vnew<CR>
+nmap <leader>]  :rightbelow vnew<CR>
+nmap <leader>_  :rightbelow new<CR>
+
 " custom file type settings
-"au FileType html, htmldjango, less
-"    \ set shiftwidth=2 softtabstop=2 tabstop=2 textwidth=239
+au FileType html, htmldjango, less
+    \ set shiftwidth=2 softtabstop=2 tabstop=2 textwidth=239
