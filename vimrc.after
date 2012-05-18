@@ -32,6 +32,15 @@ au BufWritePre * :call StripTrailingSpaces()
 vmap > >gv
 vmap < <gv
 
+" Command-T automatic update on NERDTree focus
+autocmd AuNERDTreeCmd FocusGained * call s:UpdateCommandT()
+
+function s:UpdateCommandT(...)
+  if exists(":CommandTFlush") == 2
+    CommandTFlush
+  endif
+endfunction
+
 " setup viewport swapping
 function! MarkWindowSwap()
     let g:markedWinNum = winnr()
