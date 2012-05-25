@@ -71,5 +71,5 @@ nmap <leader>]  :rightbelow vnew<CR>
 nmap <leader>_  :rightbelow new<CR>
 
 " custom file type settings
-au FileType html, htmldjango, less
+au FileType html,htmldjango,less
     \ set shiftwidth=2 softtabstop=2 tabstop=2 textwidth=239
