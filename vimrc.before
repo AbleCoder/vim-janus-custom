@@ -9,4 +9,10 @@ set visualbell
 
 " NERDTree configuration
 let NERDTreeIgnore=['\.pyc$', '\.rbc$', '\~$']
+let NERDTreeMouseMode=2 " double-click open folders, single-click open file
+let NERDTreeShowHidden=1 " show hidden files
 map <Leader>n :NERDTreeToggle<CR>
+
+" Disable Plugins
+call janus#disable_plugin('command-t', "Using ctrl-p instead.")
+call janus#disable_plugin('buffergator', "I don't use it and it messes up my ability to open a file in more than one tab.")

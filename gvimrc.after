@@ -1,0 +1,5 @@
+" set that sweet sweet color scheme for MacVim
+colorscheme ir_black
+
+" setup NERDTree to open files once per tab (instead of once per all open tabs)
+set switchbuf=useopen

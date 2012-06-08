@@ -1,10 +1,5 @@
-" set that sweet sweet color scheme
-colorscheme ir_black
-
-" Without setting this, ZoomWin restores windows in a way that causes
-" equalalways behavior to be triggered the next time CommandT is used.
-" This is likely a bludgeon to solve some other issue, but it works
-set noequalalways
+" set color scheme
+colorscheme pablo
 
 " ZoomWin configuration
 map <Leader><Leader> :ZoomWin<CR>
@@ -32,14 +27,8 @@ au BufWritePre * :call StripTrailingSpaces()
 vmap > >gv
 vmap < <gv
 
-" Command-T automatic update on NERDTree focus
-autocmd AuNERDTreeCmd FocusGained * call s:UpdateCommandT()
-
-function s:UpdateCommandT(...)
-  if exists(":CommandTFlush") == 2
-    CommandTFlush
-  endif
-endfunction
+" setup CtrlP to open files once per tab (instead of once per all open tabs)
+let g:ctrlp_switch_buffer = 1
 
 " setup viewport swapping
 function! MarkWindowSwap()
