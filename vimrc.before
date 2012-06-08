@@ -9,7 +9,7 @@ set visualbell
 
 " NERDTree configuration
 let NERDTreeIgnore=['\.pyc$', '\.rbc$', '\~$']
-let NERDTreeMouseMode=2 " double-click open folders, single-click open file
+let NERDTreeMouseMode=1 " double-click open folders, double-click open file
 let NERDTreeShowHidden=1 " show hidden files
 map <Leader>n :NERDTreeToggle<CR>
 
