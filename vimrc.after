@@ -62,3 +62,8 @@ nmap <leader>_  :rightbelow new<CR>
 " custom file type settings
 au FileType html,htmldjango,less
     \ set shiftwidth=2 softtabstop=2 tabstop=2 textwidth=239
+
+" tslime bindings
+vmap <C-c><C-c> <Plug>SendSelectionToTmux
+nmap <C-c><C-c> <Plug>NormalModeSendToTmux
+nmap <C-c>r <Plug>SetTmuxVars

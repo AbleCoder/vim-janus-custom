@@ -16,6 +16,6 @@
 [submodule "janus/vim-nerdtree-tabs"]
 	path = janus/vim-nerdtree-tabs
 	url = https://github.com/jistr/vim-nerdtree-tabs.git
-[submodule "janus/screen"]
-	path = janus/screen
-	url = https://github.com/ervandew/screen.git
+[submodule "janus/tslime"]
+	path = janus/tslime
+	url = https://github.com/jgdavey/tslime.vim.git
