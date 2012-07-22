@@ -1,5 +1,7 @@
 " set color scheme
-colorscheme pablo
+syntax enable
+set background=dark
+colorscheme solarized
 
 " ZoomWin configuration
 map <Leader><Leader> :ZoomWin<CR>
@@ -50,8 +52,8 @@ function! DoWindowSwap()
     exe 'hide buf' markedBuf
 endfunction
 
-nmap <silent> <leader>mw :call MarkWindowSwap()<CR>
-nmap <silent> <leader>pw :call DoWindowSwap()<CR>
+"nmap <silent> <leader>mw :call MarkWindowSwap()<CR>
+"nmap <silent> <leader>pw :call DoWindowSwap()<CR>
 
 " split-it mapping
 nmap <leader>-  :new<CR>
@@ -63,12 +65,19 @@ nmap <leader>_  :rightbelow new<CR>
 au FileType html,htmldjango,less
     \ set shiftwidth=2 softtabstop=2 tabstop=2 textwidth=239
 
-au BufRead,BufNewFile *.clj set filetype=clojure
+"au BufRead,BufNewFile *.clj set filetype=clojure
+
+" set screen.vim to use tmux
+let g:ScreenImpl = 'Tmux'
 
 " tslime bindings
 vmap <C-c><C-c> <Plug>SendSelectionToTmux
 nmap <C-c><C-c> <Plug>NormalModeSendToTmux
 nmap <C-c>r <Plug>SetTmuxVars
+
+" disable janus maps that conflict with VimClojure
+unmap <leader>et
+unmap <leader>rt
 
 " VimClojure config
 let vimclojure#WantNailgun = 1
@@ -79,8 +88,11 @@ let vimclojure#HighlightContrib=1
 let vimclojure#DynamicHighlighting=1
 let vimclojure#ParenRainbow=1
 
-" Start vimclojure nailgun server (uses screen.vim to manage lifetime)
-"nmap <silent> <Leader>sc :execute "ScreenShell java -cp \"" . classpath . sep . vimclojureRoot . "/lib/*" . "\" vimclojure.nailgun.NGServer 127.0.0.1" <cr>
+" Screen.vim conf
+let g:ScreenShellTmuxInitArgs = '-2' " start tmux with 256 color support
+let g:ScreenShellHeight = 3
 
+" Start vimclojure nailgun server (uses screen.vim to manage lifetime)
+nmap <silent> <Leader>sc :execute "ScreenShell ~/.vim-lib/vimclojure/ng-server" <cr>
 " Start a generic Clojure repl (uses screen.vim)
-"nmap <silent> <Leader>sC :execute "ScreenShell java -cp \"" . classpath . "\" clojure.main" <cr>
+nmap <silent> <Leader>sC :execute "ScreenShell lein repl" <cr>

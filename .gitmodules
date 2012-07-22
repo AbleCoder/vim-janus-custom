@@ -25,3 +25,6 @@
 [submodule "janus/screen"]
 	path = janus/screen
 	url = https://github.com/ervandew/screen.git
+[submodule "janus/vim-colors-solarized"]
+	path = janus/vim-colors-solarized
+	url = https://github.com/altercation/vim-colors-solarized.git

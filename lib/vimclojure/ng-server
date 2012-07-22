@@ -1,6 +1,6 @@
 #! /bin/bash
 
-export VIMCLOJURE_SERVER_JAR="$HOME/.vim-lib/vimclojure/server-2.3.0.jar"
+export VIMCLOJURE_SERVER_JAR="$HOME/.vim-lib/vimclojure/server-2.3.3.jar"
 
 if [ -z $VIMCLOJURE_SERVER_JAR ]; then
     echo "Error! Need to define location of VimClojure nailgun server jar with:"
