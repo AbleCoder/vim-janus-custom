@@ -33,6 +33,7 @@ holds submodules for git plugins I use.
   ln -s `pwd`/vimrc.after ~/.vimrc.after
   ln -s `pwd`/vimrc.before ~/.vimrc.before
   ln -s `pwd`/janus ~/.janus
+  ln -s `pwd`/lib ~/.vim-lib
   ```
 
 1. Profit!!!
