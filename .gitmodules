@@ -22,3 +22,6 @@
 [submodule "janus/VimClojure"]
 	path = janus/VimClojure
 	url = https://github.com/vim-scripts/VimClojure.git
+[submodule "janus/screen"]
+	path = janus/screen
+	url = https://github.com/ervandew/screen.git
