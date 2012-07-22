@@ -7,8 +7,14 @@ holds submodules for git plugins I use.
 ## Usage
 
 1. Install Vim and [janus](https://github.com/carlhuda/janus)
-  
+
 1. Install this font for proper powerline symbols: [VeraMono-Powerline.ttf](https://github.com/gbuntu127/gfonts/blob/master/VeraMono-Powerline.ttf)
+
+1. Install nailgun client/server:
+
+  ```
+  brew install nailgun
+  ``
 
 1. Clone this repo and init submodules:
 

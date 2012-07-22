@@ -19,3 +19,6 @@
 [submodule "janus/tslime"]
 	path = janus/tslime
 	url = https://github.com/jgdavey/tslime.vim.git
+[submodule "janus/VimClojure"]
+	path = janus/VimClojure
+	url = https://github.com/vim-scripts/VimClojure.git
