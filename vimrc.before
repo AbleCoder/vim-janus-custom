@@ -15,6 +15,6 @@ map <Leader>n :NERDTreeToggle<CR>
 
 " Disable Plugins
 call janus#disable_plugin('command-t', "Using ctrl-p instead.")
-call janus#disable_plugin('buffergator', "I don't use it and it messes up my ability to open a file in more than one tab.")
+"call janus#disable_plugin('buffergator', "I don't use it and it messes up my ability to open a file in more than one tab.")
 call janus#disable_plugin("tslime", "I believe it's kep mappings collide with VimClojure's")
 call janus#disable_plugin("tagbar", "VimClojure collisions")
