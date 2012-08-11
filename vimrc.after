@@ -1,7 +1,6 @@
 " set color scheme
 syntax enable
-set background=dark
-colorscheme ir_black
+colorscheme pablo
 
 " ZoomWin configuration
 map <Leader><Leader> :ZoomWin<CR>
