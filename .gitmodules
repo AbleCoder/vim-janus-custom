@@ -34,3 +34,6 @@
 [submodule "janus/vim-qml"]
 	path = janus/vim-qml
 	url = https://github.com/peterhoeg/vim-qml.git
+[submodule "janus/vim-stylus"]
+	path = janus/vim-stylus
+	url = https://github.com/wavded/vim-stylus.git
